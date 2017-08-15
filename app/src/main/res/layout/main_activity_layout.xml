@@ -3,11 +3,11 @@
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent">
 <!--android:orientation:vertical,在线性布局中，vertical垂直排列，horizontal水平排列-->
-    <Button
+   <!-- <Button
         android:id="@+id/button_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="left"
+        android:layout_gravity="bottom"
         android:text="button_1"
         android:textAllCaps="false"/>
     <Button
@@ -23,8 +23,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="button_3"
-        android:textAllCaps="false"/>
-
+        android:textAllCaps="false"/>-->
+        <EditText android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="button1"/>
 
 
 </LinearLayout>
