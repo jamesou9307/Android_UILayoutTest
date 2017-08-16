@@ -130,7 +130,7 @@ android:layout_left 相对于某控件之左
 
 </RelativeLayout>-->
     <!--FrameLayout 帧布局-->
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
     android:layout_width="match_parent">
     <TextView
@@ -143,4 +143,24 @@ android:layout_left 相对于某控件之左
         android:src="@mipmap/ic_launcher"
         android:layout_gravity="right"/>
 
-</FrameLayout>
+</FrameLayout>-->
+<android.support.percent.PercentFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+    <Button
+        android:id="@+id/button1"
+        android:text="button 1"
+        android:layout_gravity="left|top"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="50%"
+        />
+    <Button
+        android:id="@+id/button2"
+        android:text="button2"
+        android:layout_gravity="right|top"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="50%"/>
+</android.support.percent.PercentFrameLayout>
