@@ -144,6 +144,8 @@ android:layout_left 相对于某控件之左
         android:layout_gravity="right"/>
 
 </FrameLayout>-->
+    <!--百分比布局-->
+<!--
 <android.support.percent.PercentFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -163,4 +165,19 @@ android:layout_left 相对于某控件之左
         android:layout_gravity="right|top"
         app:layout_widthPercent="50%"
         app:layout_heightPercent="50%"/>
-</android.support.percent.PercentFrameLayout>
+</android.support.percent.PercentFrameLayout>-->
+<!--引入布局-->
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <include layout="@layout/title"/>
+</LinearLayout>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <com.james.android_uilayouttest.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
